@@ -32,9 +32,15 @@ body {
 /* Mobile View */
 @media (max-width: 768px) {
     .hero {
-        background-position: 83.33% center !important;
-        align-items: flex-end;
-        padding-bottom: 3rem;
+        height: 80vh !important;
+        background-position: 83.33% 25% !important;
+        align-items: flex-start;
+        padding-top: 1rem; /* Adjusted padding for better spacing */
+        padding-bottom: 0;
+    }
+
+    .hero, h1 {
+        height: 525px;
     }
     
     .hero-content {
@@ -42,6 +48,16 @@ body {
         text-align: center;
         width: 100%;
         padding: 0 1rem;
+        position: absolute; /* Change to absolute positioning */
+        bottom: 1rem; /* Position at the bottom */
+    }
+
+    .hero-content h1 {
+        margin-bottom: 0; /* Remove margin below the title */
+    }
+
+    .hero-content p {
+        margin-top: 1rem; /* Add margin above the paragraph */
     }
 
     #contact-form .container {
