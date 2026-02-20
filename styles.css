@@ -30,7 +30,7 @@ body {
 }
 
 /* Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .hero {
         height: 80vh !important;
         background-position: 83.33% 25% !important;
