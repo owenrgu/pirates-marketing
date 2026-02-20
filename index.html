@@ -9,11 +9,12 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="hero" style="width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center;">
-        <div class="container text-center">
+    <section class="hero" style="width: 100vw; height: 100vh; background-image: url('images/heroImage.png'); background-size: cover; background-position: center; position: relative;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
             <h1 class="display-3 fw-bold">UpBeat</h1>
-            <p class="lead">Revolutionize your workflow with our innovative solution</p>
-            <a href="#features" class="btn btn-primary btn-lg">Get Started</a>
+            <p class="lead">Request your rythm. Get your vibe.</p>
+            <a href="#features" class="btn btn-lg" style="background-color: #00aeff; border-color: #00aeff; color: white;">Get Started</a>
         </div>
     </section>
 
@@ -24,25 +25,28 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="feature-card text-center">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Fast Performance</h3>
-                        <p>Lightning-fast speed to boost your productivity</p>
+                        <div class="feature-icon">🎵</div>
+                        <h3>Live Song Requests</h3>
+                        <p>Request your favorite songs in real-time</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Secure</h3>
-                        <p>Enterprise-grade security for your data</p>
+                        <div class="feature-icon">👍</div>
+                        <h3>Vote for Your Favorite</h3>
+                        <p>Cast your votes and influence the playlist</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
-                        <div class="feature-icon">📱</div>
-                        <h3>Responsive</h3>
-                        <p>Works seamlessly on all devices</p>
+                        <div class="feature-icon">🏆</div>
+                        <h3>Gain points</h3>
+                        <p>Earn points for your interactions and activities</p>
                     </div>
                 </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#contact-form" class="btn btn-lg" style="background-color: #00aeff; border-color: #00aeff; color: white;">Enquire Now</a>
             </div>
         </div>
     </section>
@@ -50,49 +54,73 @@
     <!-- Pricing Section -->
     <section id="pricing" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Pricing Plans</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
+            <h2 class="text-center mb-5">Choose Your Plan</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h3>Basic</h3>
-                            <h2 class="price">£9<span>/mo</span></h2>
-                            <ul class="list-unstyled">
-                                <li>5 Projects</li>
-                                <li>Basic Support</li>
-                                <li>1 GB Storage</li>
+                            <h3>No DJ</h3>
+                            <p class="mt-3">Perfect for venues without a dedicated DJ</p>
+                            <ul class="list-unstyled my-4">
+                                <li>Automated Request Queue</li>
+                                <li>Audience Voting System</li>
+                                <li>Smart Playlist Management</li>
+                                <li>Basic Analytics</li>
                             </ul>
-                            <button class="btn btn-outline-primary">Choose Plan</button>
+                            <a href="#contact-form" class="btn btn-lg" style="background-color: #00aeff; border-color: #00aeff; color: white;">Enquire Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="card featured-plan">
                         <div class="card-body text-center">
-                            <h3>Pro</h3>
-                            <h2 class="price">£29<span>/mo</span></h2>
-                            <ul class="list-unstyled">
-                                <li>Unlimited Projects</li>
+                            <h3>With DJ</h3>
+                            <p class="mt-3">Full control for professional DJs</p>
+                            <ul class="list-unstyled my-4">
+                                <li>Manual Queue Control</li>
+                                <li>Request Approval System</li>
+                                <li>Advanced Analytics Dashboard</li>
                                 <li>Priority Support</li>
-                                <li>10 GB Storage</li>
                             </ul>
-                            <button class="btn btn-primary">Choose Plan</button>
+                            <a href="#contact-form" class="btn btn-lg" style="background-color: #00aeff; border-color: #00aeff; color: white;">Enquire Now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h3>Enterprise</h3>
-                            <h2 class="price">£99<span>/mo</span></h2>
-                            <ul class="list-unstyled">
-                                <li>Unlimited Everything</li>
-                                <li>24/7 Support</li>
-                                <li>Unlimited Storage</li>
-                            </ul>
-                            <button class="btn btn-outline-primary">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-5">Get in Touch</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="plan" class="form-label">Interested Plan</label>
+                            <select class="form-select" id="plan" required>
+                                <option value="">Choose a plan...</option>
+                                <option value="no-dj">No DJ</option>
+                                <option value="with-dj">With DJ</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-lg" style="background-color: #00aeff; border-color: #00aeff; color: white;">Submit Enquiry</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -102,7 +130,6 @@
     <footer id="contact" class="bg-dark text-white py-4">
         <div class="container text-center">
             <p>&copy; 2026 UpBeat. All rights reserved.</p>
-            <p>Email: contact@product.com</p>
         </div>
     </footer>
 
