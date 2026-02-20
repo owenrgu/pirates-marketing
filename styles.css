@@ -32,7 +32,7 @@ body {
 /* Mobile View */
 @media (max-width: 768px) {
     .hero {
-        background-position: 83.33% center !important;
+        background-position: 83.33% 25% !important;
         align-items: flex-end;
         padding-bottom: 3rem;
     }
